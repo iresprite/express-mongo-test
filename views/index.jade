@@ -32,6 +32,7 @@ block content
                     th UserName
                     th Email
                     th Delete?
+                    th Edit?
                 tbody
         // /USER LIST
 
@@ -50,4 +51,21 @@ block content
                 br
                 button#btnAddUser Add User
         // /ADD USER
+        
+        // UPDATE USER
+        h2 Update User
+        #updateUser
+            fieldset
+                input#updateUserIdHidden(type='hidden', value='')
+                input#updateUserName(type='text', placeholder='Username')
+                input#updateUserEmail(type='text', placeholder='Email')
+                br
+                input#updateUserFullName(type='text', placeholder='Full Name')
+                input#updateUserAge(type='text', placeholder='Age')
+                br
+                input#updateUserLocation(type='text', placeholder='Location')
+                input#updateUserGender(type='text', placeholder='gender')
+                br
+                button#btnUpdateUser Update User
+        // /UPDATE USER
     // /WRAPPER
